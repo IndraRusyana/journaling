@@ -18,6 +18,6 @@ document.getElementById('login-btn').addEventListener('click', () => {
 
 onAuthStateChanged(auth, user => {
     if (user) {
-        window.location.href = "index.html";
+        window.location.href = "journal.html";
     }
 });
