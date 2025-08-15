@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-import netlify from "@netlify/vite-plugin";
 
 export default defineConfig({
   root: 'src',
@@ -8,6 +7,5 @@ export default defineConfig({
   },
   server: {
     open: '/login.html'
-  },
-  plugins: [netlify()],
+  }
 })
