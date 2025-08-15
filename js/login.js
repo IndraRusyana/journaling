@@ -1,10 +1,5 @@
 // js/login.js
-
-import { auth } from './firebase-config.js';
-import { 
-    signInWithEmailAndPassword, 
-    onAuthStateChanged 
-} from "firebase/auth";
+const { signInWithEmailAndPassword, onAuthStateChanged } = firebase.auth;
 
 document.getElementById('login-btn').addEventListener('click', () => {
     const email = document.getElementById('email').value;
