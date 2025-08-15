@@ -294,7 +294,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } else {
             console.log("No user is logged in.");
-            window.location.href = 'login.html';
         }
     });
 
