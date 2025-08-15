@@ -9,7 +9,7 @@ document.getElementById('login-btn').addEventListener('click', () => {
 
     signInWithEmailAndPassword(auth, email, pass)
         .then(() => {
-            window.location.href = "index.html";
+            window.location.href = "journal.html";
         })
         .catch(err => {
             loginMsg.textContent = err.message;

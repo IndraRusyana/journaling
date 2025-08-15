@@ -7,7 +7,7 @@ export default defineConfig({
     outDir: '../dist',
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'src/index.html'),
+        main: path.resolve(__dirname, 'src/journal.html'),
         login: path.resolve(__dirname, 'src/login.html')
       }
     }
