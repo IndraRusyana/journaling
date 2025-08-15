@@ -1,6 +1,5 @@
-import { db, auth } from './firebase-config.js';
-import { doc, getDoc, setDoc, deleteDoc, collection, query, getDocs, orderBy, writeBatch } from "firebase/firestore";
-import { onAuthStateChanged, signOut } from "firebase/auth";
+const { doc, getDoc, setDoc, deleteDoc, collection, query, getDocs, orderBy, writeBatch } = firebase.firestore;
+const { onAuthStateChanged, signOut } = firebase.auth;
 
 // ===== Utilities =====
 const pad = n => String(n).padStart(2, '0');
