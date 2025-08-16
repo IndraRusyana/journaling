@@ -9,7 +9,7 @@ document.getElementById('login-btn').addEventListener('click', () => {
 
     signInWithEmailAndPassword(auth, email, pass)
         .then(() => {
-            window.location.href = "journal.html";
+            window.location.href = "index.html";
         })
         .catch(err => {
             loginMsg.textContent = err.message;
@@ -18,6 +18,6 @@ document.getElementById('login-btn').addEventListener('click', () => {
 
 onAuthStateChanged(auth, user => {
     if (user) {
-        window.location.href = "journal.html";
+        window.location.href = "index.html";
     }
 });

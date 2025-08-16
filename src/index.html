@@ -65,14 +65,14 @@
 
 <body>
     <header class="sticky-actions py-3 border-bottom bg-white">
-        <button id="btnLogout" class="btn btn-sm btn-outline-danger ms-2"><i class="bi bi-box-arrow-right"></i>
-            Logout</button>
         <div class="container container-narrow d-flex flex-wrap align-items-center gap-2">
             <a class="text-decoration-none text-dark brand d-flex align-items-center gap-2" href="#">
                 <i class="bi bi-journal-check fs-3 text-primary"></i>
                 <span class="fw-bold">Journaling Pagi & Malam</span>
             </a>
-            <div class="ms-auto d-flex align-items-center gap-2">
+            <div class="ms-auto d-flex flex-wrap align-items-center gap-2">
+                <button id="btnLogout" class="btn btn-sm btn-outline-danger order-1 order-sm-0"><i
+                        class="bi bi-box-arrow-right"></i> Logout</button>
                 <input type="date" id="entryDate" class="form-control form-control-sm" aria-label="Tanggal">
                 <button class="btn btn-sm btn-outline-secondary" id="btnPrev" title="Hari sebelumnya"><i
                         class="bi bi-chevron-left"></i></button>
@@ -80,7 +80,7 @@
                         class="bi bi-chevron-right"></i></button>
                 <button class="btn btn-sm btn-outline-primary" id="btnToday" title="Ke hari ini"><i
                         class="bi bi-calendar2-day"></i> Hari ini</button>
-                <div class="vr mx-1"></div>
+                <div class="vr mx-1 d-none d-sm-block"></div>
                 <button class="btn btn-sm btn-success" id="btnSave"><i class="bi bi-save"></i> Simpan</button>
                 <button class="btn btn-sm btn-outline-danger" id="btnClear"><i class="bi bi-eraser"></i>
                     Kosongkan</button>
@@ -158,7 +158,7 @@
                                 <div class="col-12">
                                     <label class="form-label">Afirmasi Pagi</label>
                                     <input type="text" id="affirmation" class="form-control"
-                                       placeholder='"Saya mampu…"' />
+                                        placeholder='"Saya mampu…"' />
                                 </div>
                                 <div class="col-12">
                                     <label class="form-label">Rencana Singkat Hari Ini</label>
@@ -217,10 +217,14 @@
             </div>
 
             <div class="mt-4 text-center small text-muted">
-                <i class="bi bi-shield-lock"></i> Data disimpan di perangkat ini. Gunakan Ekspor untuk cadangan.
+                <i class="bi bi-shield-lock"></i> Data disimpan di firebase-firestore. Gunakan Ekspor untuk cadangan.
             </div>
         </div>
     </main>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
